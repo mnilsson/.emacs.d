@@ -6,9 +6,6 @@
 (setq auto-save-default nil);
 (menu-bar-mode -1)
 (tool-bar-mode -1) 
-(setq-default indent-tabs-mode nil)
-(setq default-tab-width 4)
-(setq tab-width 4)
 
 
 
@@ -29,3 +26,8 @@
 (setq-default show-trailing-whitespace t)
 (global-linum-mode t)
 
+(setq-default indent-tabs-mode nil)
+(setq default-tab-width 4)
+(setq tab-width 4)
+
+(set-default-font "DejaVu Sans Mono-8")
