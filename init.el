@@ -31,3 +31,5 @@
 (setq tab-width 4)
 
 (set-default-font "DejaVu Sans Mono-8")
+
+(load "egg/egg.el")
