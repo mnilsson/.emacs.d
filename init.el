@@ -26,3 +26,5 @@
 (set-default-font "DejaVu Sans Mono-8")
 
 (load "egg/egg.el")
+
+(define-key global-map [select] 'end-of-line)
