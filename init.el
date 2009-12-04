@@ -1,4 +1,4 @@
-(add-to-list 'load-path "~/.emacs.d")
+(add-to-list 'load-path "~/.emacs.d/vendor")
 
 (setq inhibit-startup-message t);
 (setq make-backup-files nil);
@@ -6,13 +6,22 @@
 (setq auto-save-default nil);
 (menu-bar-mode -1)
 (tool-bar-mode -1) 
-
+(global-font-lock-mode 3)
 
 (autoload 'php-mode "php-mode" "Major mode for editing PHP code." t)
 (add-to-list 'auto-mode-alist '("\\.php\\'" . php-mode))
-(global-font-lock-mode 3)
 
-(global-set-key "\M- " 'dabbrev-expand)
+(autoload 'javascript-mode "javascript" "Major mode for editing javascript code." t)
+(add-to-list 'auto-mode-alist '("\\.js\\'" . php-mode))
+
+
+
+
+
+
+(global-set-key "\M- " 'hippie-expand)
+(define-key global-map [select] 'end-of-line)
+
 (ido-mode t)
 (cua-mode t)
 (xterm-mouse-mode t)
@@ -25,6 +34,5 @@
 
 (set-default-font "DejaVu Sans Mono-8")
 
-(load "egg/egg.el")
 
-(define-key global-map [select] 'end-of-line)
+(load "mnilsson/shell.el")
