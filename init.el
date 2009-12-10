@@ -15,17 +15,23 @@
 (add-to-list 'auto-mode-alist '("\\.js\\'" . php-mode))
 
 
+(require 'org-install)
+(add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
+(define-key global-map "\C-cl" 'org-store-link)
+(define-key global-map "\C-ca" 'org-agenda)
+(setq org-log-done t)
+(setq org-agenda-files (list "~/org/todo.org"))
 
-
+(setq php-mode-force-pear t)
 
 
 (global-set-key "\M- " 'hippie-expand)
 (define-key global-map [select] 'end-of-line)
 
 (ido-mode t)
-(cua-mode t)
+;;(cua-mode t)
 (xterm-mouse-mode t)
-(setq-default show-trailing-whitespace t)
+(setq-default show-trailing-whitespace nil)
 (global-linum-mode t)
 
 (setq-default indent-tabs-mode nil)
@@ -35,4 +41,5 @@
 (set-default-font "DejaVu Sans Mono-8")
 
 
-(load "mnilsson/shell.el")
+;(load "mnilsson/shell.el")
+    
