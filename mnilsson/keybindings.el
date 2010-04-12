@@ -5,9 +5,11 @@
 
 (global-set-key "\M- " 'hippie-expand)
 
-(define-key global-map [select] 'end-of-line)
+
+(global-set-key [M-right] 'end-of-line)
+(global-set-key [M-left] 'beginning-of-line)
 
 (when (boundp 'osx-key-mode-map)
-  (setq mac-function-modifier 'meta)
+  (setq mac-command-modifier 'meta)
   (setq mac-option-modifier nil))
 
