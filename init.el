@@ -3,6 +3,7 @@
 
 (load "mnilsson/global")
 (load "mnilsson/theme")
+(load "mnilsson/php")
 (load "mnilsson/keybindings")
 (load "mnilsson/org-mode")
 (load "mnilsson/sgml")

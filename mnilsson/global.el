@@ -6,14 +6,6 @@
 (tool-bar-mode -1) 
 (global-font-lock-mode 3)
 
-(autoload 'php-mode "php-mode" "Major mode for editing PHP code." t)
-(add-to-list 'auto-mode-alist '("\\.php\\'" . php-mode))
-
-(autoload 'javascript-mode "javascript" "Major mode for editing javascript code." t)
-(add-to-list 'auto-mode-alist '("\\.js\\'" . php-mode))
-
-
-(setq php-mode-force-pear t)
 
 
 
