@@ -7,6 +7,7 @@
 (load "mnilsson/keybindings")
 (load "mnilsson/org-mode")
 (load "mnilsson/sgml")
+(load "mnilsson/markdown")
 (load "vendor/textmate/textmate")
 
 (textmate-mode)
