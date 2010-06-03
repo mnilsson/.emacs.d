@@ -21,9 +21,6 @@
 (setq org-agenda-files (quote ("~/org/todo.org_archive" "~/org/todo.org")))
 
 
-;(setq org-todo-keywords (quote ((sequence "TODO(t)" "STARTED(s!)" "|" "DONE(d!/!)")
-;                                (sequence "WAITING(w@/!)" "SOMEDAY(S!)" "OPEN(O@)" "|" "CANCELLED(c@/!)"))))
-
 (setq org-todo-keyword-faces (
                               quote (
                                      ("TODO" :foreground "red" :weight bold)
@@ -35,30 +32,3 @@
                                      )
                                     )
       )
-
-(setq org-todo-state-tags-triggers
-      (quote (("CANCELLED" ("CANCELLED" . t))
-              ("WAITING" ("WAITING" . t) ("NEXT"))
-              ("SOMEDAY" ("WAITING" . t))
-              (done ("NEXT") ("WAITING"))
-              ("TODO" ("WAITING") ("CANCELLED") ("NEXT"))
-              ("STARTED" ("WAITING"))
-              ("DONE" ("WAITING") ("CANCELLED") ("NEXT")))))
-
-
-;(defun org-summary-todo (n-done n-not-done)
-;       "Switch entry to DONE when all subentries are done, to TODO otherwise."
-;       (let (org-log-done org-log-states)   ; turn off logging
-;         (org-todo (if (= n-not-done 0) "DONE" "TODO"))))
-
-;     (add-hook 'org-after-todo-statistics-hook 'org-summary-todo)
-
-
-(setq org-mobile-directory "/scpc:mnilsson@mnilsson.se:2078:org/")
-
-
-(setq org-ditaa-jar-path "~/Development/Vendor/org-mode/contrib/scripts/ditaa0_9.jar")
-(require 'org-babel-init)
-(require 'org-babel-dot)
-(require 'org-babel-ditaa)
-(org-babel-load-library-of-babel)
