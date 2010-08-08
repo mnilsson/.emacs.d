@@ -10,3 +10,12 @@
 [submodule "vendor/markdown-mode"]
 	path = vendor/markdown-mode
 	url = git://jblevins.org/git/markdown-mode.git
+[submodule "vendor/cheat"]
+	path = vendor/cheat
+	url = http://github.com/defunkt/cheat.el.git
+[submodule "vendor/php-mode"]
+	path = vendor/php-mode
+	url = http://github.com/emacsmirror/php-mode.git
+[submodule "vendor/rinari"]
+	path = vendor/rinari
+	url = git://github.com/eschulte/rinari.git
