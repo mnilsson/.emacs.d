@@ -4,23 +4,23 @@
 (setq auto-save-default nil);
 (tool-bar-mode -1)
 (global-font-lock-mode 3)
-(linum-mode t)
+(global-linum-mode t)
 (set-default-font "Menlo 12")
-
+(cua-mode nil)
 
 
 
 (ido-mode t)
 
 (xterm-mouse-mode t)
-;(setq-default show-trailing-whitespace 1)
 
+(setq-default show-trailing-whitespace t)
 (setq x-select-enable-clipboard t)
 
 (fringe-mode "minimal")
 (setq-default indent-tabs-mode nil)
-(setq default-tab-width 4)
-(setq tab-width 4)
+(setq-default tab-width 4)
+
 
 (when (boundp 'aquamacs-version)
   (one-buffer-one-frame-mode 0))
