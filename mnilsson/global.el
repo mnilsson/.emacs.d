@@ -3,7 +3,6 @@
 (setq auto-save-list-file-name nil);
 (setq auto-save-default nil);
 (global-font-lock-mode 3)
-(global-linum-mode t)
 (set-default-font "Menlo 12")
 (cua-mode nil)
 
@@ -16,7 +15,6 @@
 (setq-default show-trailing-whitespace t)
 (setq x-select-enable-clipboard t)
 
-(fringe-mode "minimal")
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
 
