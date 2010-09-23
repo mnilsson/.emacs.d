@@ -1,6 +1,3 @@
-[submodule "egg"]
-	path = vendor/egg
-	url = git://github.com/bogolisk/egg.git
 [submodule "vendor/twilight-emacs"]
 	path = vendor/twilight-emacs
 	url = git://github.com/crafterm/twilight-emacs.git
@@ -19,3 +16,6 @@
 [submodule "vendor/rinari"]
 	path = vendor/rinari
 	url = git://github.com/eschulte/rinari.git
+[submodule "vendor/magit"]
+	path = vendor/magit
+	url = http://github.com/technomancy/magit.git

@@ -10,4 +10,4 @@
 (load "mnilsson/markdown")
 
 (vendor 'cheat)
-
+(vendor 'magit)

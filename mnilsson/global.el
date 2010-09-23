@@ -2,6 +2,7 @@
 (setq make-backup-files nil);
 (setq auto-save-list-file-name nil);
 (setq auto-save-default nil);
+(setq vc-handled-backends nil)
 (global-font-lock-mode 3)
 (set-default-font "Menlo 12")
 (cua-mode nil)
