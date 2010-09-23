@@ -2,7 +2,6 @@
 (setq make-backup-files nil);
 (setq auto-save-list-file-name nil);
 (setq auto-save-default nil);
-(tool-bar-mode -1)
 (global-font-lock-mode 3)
 (global-linum-mode t)
 (set-default-font "Menlo 12")
@@ -25,6 +24,8 @@
 (when (boundp 'aquamacs-version)
   (one-buffer-one-frame-mode 0))
 
+(when (functionp 'tool-bar-mode)
+  (tool-bar-mode -1))
 
 (defun mnl-toggle-selective-display ()
  (interactive)
