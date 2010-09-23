@@ -4,5 +4,3 @@
 
 (global-set-key [M-right] 'end-of-line)
 (global-set-key [M-left] 'beginning-of-line)
-
-(setq mac-option-modifier 'meta)
