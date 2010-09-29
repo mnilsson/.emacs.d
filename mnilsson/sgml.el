@@ -1,15 +1,13 @@
 (setq sgml-basic-offset 4)
 (defun mnilsson-sgml-mode-hook ()
-  (setq fill-column 70
-        indent-tabs-mode t
+  (setq fill-column 10000
+        indent-tabs-mode nil
         next-line-add-newlines nil
         standard-indent 4
-        tab-width 4
-        )
-  (set (make-local-variable 'sgml-basic-offset) 4)
-)
+        tab-width 4))
+
+(setq sgml-mode-hook 'mnilsson-sgml-mode-hook)
 
 (add-hook 'html-mode-hook
           (lambda ()
-            (set (make-local-variable 'sgml-basic-offset) 4)
             (sgml-guess-indent)))
