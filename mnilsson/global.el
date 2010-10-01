@@ -23,6 +23,9 @@
 (when (boundp 'aquamacs-version)
   (one-buffer-one-frame-mode 0))
 
+(when (functionp 'tabbar-mode)
+  (tabbar-mode -1))
+
 (when (functionp 'tool-bar-mode)
   (tool-bar-mode -1))
 
