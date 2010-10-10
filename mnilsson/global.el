@@ -7,13 +7,14 @@
 (set-default-font "Menlo 12")
 (cua-mode nil)
 
+(when (functionp 'scroll-bar-mode)
+  (scroll-bar-mode -1))
 
 
 (ido-mode t)
 
 (xterm-mouse-mode t)
 
-(setq-default show-trailing-whitespace t)
 (setq x-select-enable-clipboard t)
 
 (setq-default indent-tabs-mode nil)
@@ -32,5 +33,7 @@
 (defun mnl-toggle-selective-display ()
  (interactive)
  (set-selective-display (if selective-display nil 1)))
+
+
 
 (global-set-key [f5] 'mnl-toggle-selective-display)
