@@ -20,6 +20,9 @@
 
 (setq org-agenda-files (quote ("~/org/todo.org_archive" "~/org/todo.org")))
 
+(setq org-todo-keywords
+           '((sequence "TODO(t)" "|" "DONE(d!/!)" "|" "STARTED(s!)")
+             (sequence "WAITING(w)" "CANCELED(c!)" "DELEGATED(l!)")))
 
 (setq org-todo-keyword-faces (
                               quote (
