@@ -4,7 +4,7 @@
 (setq auto-save-default nil);
 (setq vc-handled-backends nil)
 (global-font-lock-mode 3)
-(set-default-font "Menlo 12")
+(set-face-attribute 'default nil :font "menlo" :height 110)
 (cua-mode nil)
 
 (when (functionp 'scroll-bar-mode)
@@ -22,7 +22,8 @@
 
 
 (when (boundp 'aquamacs-version)
-  (one-buffer-one-frame-mode 0))
+  (one-buffer-one-frame-mode 0)
+  (aquamacs-autoface-mode 0))
 
 (when (functionp 'tabbar-mode)
   (tabbar-mode -1))
