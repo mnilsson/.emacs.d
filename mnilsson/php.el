@@ -1,17 +1,21 @@
 
 (vendor 'php-mode)
 
-(autoload 'php-mode "php-mode" "Major mode for editing PHP code." t)
-(add-to-list 'auto-mode-alist '("\\.php\\'" . php-mode))
+(add-to-list 'auto-mode-alist '("\\.php\\'" . mnilsson-php-mode))
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . html-mode))
 (autoload 'javascript-mode "javascript" "Major mode for editing javascript code." t)
 (add-to-list 'auto-mode-alist '("\\.js\\'" . javascript-mode))
 
-(setq php-basic-offset 4)
 
 
-(setq php-mode-force-pear t)
-
+(defun mnilsson-php-mode ()
+  ;; Get rid of that ugly array and switch indentation
+  (php-mode)
+  (setq c-basic-offset 4)
+  (c-set-offset 'case-label '+)
+  (c-set-offset 'arglist-close 'c-lineup-arglist-operators)
+  (c-set-offset 'arglist-intro '+)
+  (c-set-offset 'arglist-cont-nonempty 'c-lineup-math))
 
 (add-hook 'php-mode-hook
           (lambda ()
