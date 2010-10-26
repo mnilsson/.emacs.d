@@ -5,3 +5,5 @@
 (global-set-key [M-right] 'end-of-line)
 (global-set-key [M-left] 'beginning-of-line)
 (global-set-key [C-tab] 'next-buffer)
+
+(global-set-key (kbd "C-x C-b") 'buffer-menu)
