@@ -1,7 +1,3 @@
-(add-to-list 'load-path "~/Development/Vendor/org-mode/lisp")
-(add-to-list 'load-path "~/Development/Vendor/org-mode/contrib/lisp")
-
-
 (transient-mark-mode 1)
 (setq org-log-done t)
 (add-hook 'org-mode-hook 'turn-on-font-lock)

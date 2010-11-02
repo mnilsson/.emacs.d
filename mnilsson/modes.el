@@ -3,7 +3,7 @@
 (load "mnilsson/php")
 (load "mnilsson/javascript")
 (load "mnilsson/org-mode.el")
-(load "mnilsson/whitespace")
+(load "mnilsson/yasnippet")
 
 (vendor 'textmate)
 (textmate-mode)
