@@ -10,6 +10,7 @@
 
 (defun mnilsson-php-mode ()
   ;; Get rid of that ugly array and switch indentation
+  (interactive)
   (php-mode)
   (setq c-basic-offset 4)
   (c-set-offset 'case-label '+)
