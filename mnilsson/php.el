@@ -20,6 +20,7 @@
 
 (add-hook 'php-mode-hook
           (lambda ()
+            (flymake-mode t)
             (define-key php-mode-map "\C-m" 'reindent-then-newline-and-indent)
             (define-key php-mode-map "[" 'electric-pair)
             (define-key php-mode-map "{" 'electric-pair)))
