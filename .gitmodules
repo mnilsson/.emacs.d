@@ -19,3 +19,6 @@
 [submodule "vendor/magit"]
 	path = vendor/magit
 	url = http://github.com/technomancy/magit.git
+[submodule "vendor/themes/color-theme-railscasts"]
+	path = vendor/themes/color-theme-railscasts
+	url = https://github.com/olegshaldybin/color-theme-railscasts.git

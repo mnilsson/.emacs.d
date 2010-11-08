@@ -5,6 +5,7 @@
 (load "mnilsson/global")
 (load "mnilsson/modes")
 (load "mnilsson/keybindings")
+(load "mnilsson/theme")
 
 (vendor 'cheat)
 (vendor 'magit)
