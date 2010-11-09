@@ -14,7 +14,7 @@
 
 
 
-(setq org-agenda-files (quote ("~/org/todo.org_archive" "~/org/todo.org")))
+(setq org-agenda-files (file-expand-wildcards "~/org/*.org"))
 
 (setq org-todo-keywords
            '((sequence "TODO(t)" "|" "DONE(d!/!)" "|" "STARTED(s!)")
