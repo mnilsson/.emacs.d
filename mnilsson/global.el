@@ -6,7 +6,7 @@
 (global-font-lock-mode 3)
 (set-face-attribute 'default nil :font "menlo" :height 110)
 (cua-mode nil)
-
+(normal-erase-is-backspace-mode nil)
 (when (functionp 'scroll-bar-mode)
   (scroll-bar-mode -1))
 
