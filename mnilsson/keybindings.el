@@ -7,3 +7,4 @@
 (global-set-key [C-tab] 'next-buffer)
 
 (global-set-key (kbd "C-x C-b") 'buffer-menu)
+(global-set-key (kbd "C-;") 'toggle-option-key-is-meta)
