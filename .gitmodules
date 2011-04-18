@@ -16,9 +16,12 @@
 [submodule "vendor/rinari"]
 	path = vendor/rinari
 	url = git://github.com/eschulte/rinari.git
-[submodule "vendor/magit"]
-	path = vendor/magit
-	url = http://github.com/technomancy/magit.git
 [submodule "vendor/themes/color-theme-railscasts"]
 	path = vendor/themes/color-theme-railscasts
 	url = https://github.com/olegshaldybin/color-theme-railscasts.git
+[submodule "vendor/magit"]
+	path = vendor/magit
+	url = https://github.com/philjackson/magit
+[submodule "vendor/org-mode"]
+	path = vendor/org-mode
+	url = git://orgmode.org/org-mode.git
