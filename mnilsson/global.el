@@ -1,15 +1,21 @@
-(setq inhibit-startup-message t);
-(setq make-backup-files nil);
-(setq auto-save-list-file-name nil);
-(setq auto-save-default nil);
+(prefer-coding-system 'utf-8)
+(setq inhibit-startup-message t)
+(setq make-backup-files nil)
+(setq auto-save-list-file-name nil)
+(setq auto-save-default nil
+      backup-inhibited)
 (setq vc-handled-backends nil)
 (global-font-lock-mode 3)
+
 (set-face-attribute 'default nil :font "menlo" :height 110)
 (cua-mode nil)
 (normal-erase-is-backspace-mode nil)
 (when (functionp 'scroll-bar-mode)
   (scroll-bar-mode -1))
 
+(defalias 'list-buffers 'ibuffer)
+(defalias 'yes-or-no-p 'y-or-n-p)
+(setq ibuffer-expert t)
 
 (ido-mode t)
 
@@ -36,5 +42,27 @@
  (set-selective-display (if selective-display nil 1)))
 
 
+(windmove-default-keybindings)
+(setq windmove-wrap-around t)
 
-(global-set-key [f5] 'mnl-toggle-selective-display)
+(require 'eshell)
+(push 'eshell-smart eshell-modules-list)
+
+;; whitespace & line breaks
+(setq kill-whole-line t
+      require-final-newline t
+      whitespace-display-mappings
+      '((space-mark 32 [183] [46])
+        (space-mark 160[164] [95])
+        (space-mark 2208 [2212] [95])
+        (space-mark 2336 [2340] [95])
+        (space-mark 3616 [3620] [95])
+        (space-mark 3872 [3876] [95])
+        (newline-mark 10 [36 10])
+        (tab-mark 9 [9655 9] [92 9]))
+      whitespace-line-column 80
+      whitespace-style '(face trailing tabs tab-mark lines-tail empty))
+
+(global-whitespace-mode 1)
+
+(setq password-cache-expiry nil)
